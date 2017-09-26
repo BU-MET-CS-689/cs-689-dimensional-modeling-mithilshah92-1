@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- common.css -->
+      <style>* {-webkit-tap-highlight-color: rgba(0,0,0,0);}html {-webkit-text-size-adjust: none;}body {font-family: -apple-system, Helvetica, Arial, sans-serif;margin: 0;padding: 20px;color: #333;word-wrap: break-word;}h1, h2, h3, h4, h5, h6 {line-height: 1.1;}img {max-width: 100% !important;height: auto;}blockquote {margin: 0;padding: 0 15px;color: #777;border-left: 4px solid #ddd;}hr {background-color: #ddd;border: 0;height: 1px;margin: 15px 0;}code {font-family: Menlo, Consolas, 'Ubuntu Mono', Monaco, 'source-code-pro', monospace;line-height: 1.4;margin: 0;padding: 0.2em 0;font-size: 90%;background-color: rgba(0,0,0,0.04);border-radius: 3px;}pre > code {margin: 0;padding: 0;font-size: 100%;word-break: normal;background: transparent;border: 0;}ol {list-style-type: decimal;}ol ol, ul ol {list-style-type: lower-latin;}ol ol ol, ul ol ol, ul ul ol, ol ul ol {list-style-type: lower-roman;}table {border-spacing: 0;border-collapse: collapse;margin-top: 0;margin-bottom: 16px;}table th {font-weight: bold;}table th, table td {padding: 6px 13px;border: 1px solid #ddd;}table tr {border-top: 1px solid #ccc;}table tr:nth-child(even) {background-color: #f8f8f8;}input[type="checkbox"] {cursor: default;margin-right: 0.5em;font-size: 13px;}.task-list-item {list-style-type: none;}.task-list-item+.task-list-item {margin-top: 3px;}.task-list-item input {float: left;margin: 0.3em 1em 0.25em -1.6em;vertical-align: middle;}#tag-field {margin: 8px 2px 10px;}#tag-field .tag {display: inline-block;background: #cadff3;border-radius: 4px;padding: 1px 8px;color: black;font-size: 12px;margin-right: 10px;line-height: 1.4;}</style>
+      <!-- ace-static.css -->
+      <style>.ace_static_highlight {white-space: pre-wrap;}.ace_static_highlight .ace_gutter {width: 2em;text-align: right;padding: 0 3px 0 0;margin-right: 3px;}.ace_static_highlight.ace_show_gutter > .ace_line {padding-left: 2.6em;}.ace_static_highlight .ace_line {position: relative;}.ace_static_highlight .ace_gutter-cell {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;top: 0;bottom: 0;left: 0;position: absolute;}.ace_static_highlight .ace_gutter-cell:before {content: counter(ace_line, decimal);counter-increment: ace_line;}.ace_static_highlight {counter-reset: ace_line;}</style>
+      <style>.ace-chrome .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-chrome .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-chrome {background-color: #FFFFFF;color: black;}.ace-chrome .ace_cursor {color: black;}.ace-chrome .ace_invisible {color: rgb(191, 191, 191);}.ace-chrome .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-chrome .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-chrome .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-chrome .ace_invalid {background-color: rgb(153, 0, 0);color: white;}.ace-chrome .ace_fold {}.ace-chrome .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-chrome .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-chrome .ace_support.ace_type,.ace-chrome .ace_support.ace_class.ace-chrome .ace_support.ace_other {color: rgb(109, 121, 222);}.ace-chrome .ace_variable.ace_parameter {font-style:italic;color:#FD971F;}.ace-chrome .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-chrome .ace_comment {color: #236e24;}.ace-chrome .ace_comment.ace_doc {color: #236e24;}.ace-chrome .ace_comment.ace_doc.ace_tag {color: #236e24;}.ace-chrome .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-chrome .ace_variable {color: rgb(49, 132, 149);}.ace-chrome .ace_xml-pe {color: rgb(104, 104, 91);}.ace-chrome .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-chrome .ace_heading {color: rgb(12, 7, 255);}.ace-chrome .ace_list {color:rgb(185, 6, 144);}.ace-chrome .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-chrome .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-chrome .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-chrome .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-chrome .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-chrome .ace_gutter-active-line {background-color : #dcdcdc;}.ace-chrome .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-chrome .ace_storage,.ace-chrome .ace_keyword,.ace-chrome .ace_meta.ace_tag {color: rgb(147, 15, 128);}.ace-chrome .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-chrome .ace_string {color: #1A1AA6;}.ace-chrome .ace_entity.ace_other.ace_attribute-name {color: #994409;}.ace-chrome .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}</style>
+      <!-- export.css -->
+      <style>
+        body{margin:0 auto;max-width:800px;line-height:1.4}
+        #nav{margin:5px 0 10px;font-size:15px}
+        #titlearea{border-bottom:1px solid #ccc;font-size:17px;padding:10px 0;}
+        #contentarea{font-size:15px;margin:16px 0}
+        .cell{outline:0;min-height:20px;margin:5px 0;padding:5px 0;}
+        .code-cell{font-family:Menlo,Consolas,'Ubuntu Mono',Monaco,'source-code-pro',monospace;font-size:12px;}
+        .latex-cell{white-space:pre-wrap;}
+      </style>
+      <!-- User CSS -->
+      <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
+    </head>
+    <body>
+      
+      <div id="titlearea">
+        <h2>Assignment 1</h2>
+      </div>
+      <div id="contentarea"><div class="cell text-cell"><h1>Overview</h1><div>In your VM, you will find a schema called 'us\_national\_statistics.' You will be working with tables in this schema as your assignment.</div></div><div class="cell text-cell">The primary table is <b>person_economic_info</b>. &nbsp;Each row describes a person sampled from that state with that data. &nbsp;It has the following columns:<br></div><div class="cell markdown-cell"><table>
+<thead>
+<tr>
+<th>column_name</th>
+<th>column_description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>age</td>
+<td>person's age in years</td>
+</tr>
+<tr>
+<td>marital_status</td>
+<td>indicates whether the person is married</td>
+</tr>
+<tr>
+<td>address_state</td>
+<td>numeric code refers to 'states' table</td>
+</tr>
+<tr>
+<td>income</td>
+<td>annual income in USD</td>
+</tr>
+<tr>
+<td>income_category</td>
+<td>categorized income</td>
+</tr>
+<tr>
+<td>car_price</td>
+<td>price of car in USD</td>
+</tr>
+<tr>
+<td>car_price_category</td>
+<td>categorized car price</td>
+</tr>
+<tr>
+<td>education</td>
+<td>numeric code refers to education_codes table</td>
+</tr>
+<tr>
+<td>years_employed</td>
+<td>years of continuous employment for person</td>
+</tr>
+<tr>
+<td>retired</td>
+<td>indicates person is retired</td>
+</tr>
+<tr>
+<td>employment_category</td>
+<td>categorizes type of most recent employment for person per  employment_categories table</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>'m' or 'f' for male or female</td>
+</tr>
+<tr>
+<td>length_at_current_residence</td>
+<td>years person has lived at current residence</td>
+</tr>
+<tr>
+<td>wireless</td>
+<td>indicates person owns a wireless phone</td>
+</tr>
+<tr>
+<td>multiple_lines</td>
+<td>indicates person has multiple voice phone lines</td>
+</tr>
+<tr>
+<td>voice_mail</td>
+<td>indicates person has voice mail</td>
+</tr>
+<tr>
+<td>pager</td>
+<td>indicates person has a pager</td>
+</tr>
+<tr>
+<td>internet</td>
+<td>indicates person has a dedicated residential internet connection rather than cellular or dial-up</td>
+</tr>
+<tr>
+<td>caller_id</td>
+<td>indicates person has caller id service on voice line</td>
+</tr>
+<tr>
+<td>call_waiting</td>
+<td>indicates person has call waiting service on voice line</td>
+</tr>
+<tr>
+<td>own_tv</td>
+<td>indicates person owns a television set</td>
+</tr>
+<tr>
+<td>own_dvd_player</td>
+<td>indicates person owns a DVD playerr</td>
+</tr>
+<tr>
+<td>own_4k_tv</td>
+<td>indicates person owns a 4k HD television set</td>
+</tr>
+<tr>
+<td>own_smartphone</td>
+<td>indicates person owns a smartphone</td>
+</tr>
+<tr>
+<td>own_computer</td>
+<td>indicates person owns a personal computer</td>
+</tr>
+<tr>
+<td>own_fax</td>
+<td>indicates person has a fax send/receive device on a phone line</td>
+</tr>
+<tr>
+<td>read_newspapers</td>
+<td>indicates person reads physical newspapers</td>
+</tr>
+</tbody>
+</table>
+</div><div class="cell text-cell"><p>Description tables for this table are:</p>
+</div><div class="cell markdown-cell"><table>
+<thead>
+<tr>
+<th>table name</th>
+<th>usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>states</td>
+<td>translates numeric state codes to actual states</td>
+</tr>
+<tr>
+<td>employment_categories</td>
+<td>translates numeric employment categories to descriptions</td>
+</tr>
+<tr>
+<td>education_codes</td>
+<td>translates numeric education codes to descriptions</td>
+</tr>
+</tbody>
+</table>
+</div><div class="cell text-cell"><div></div><h1>Delivering Your Assignment</h1><div>To submit your assignment, create a spreadsheet in Excel, Apple Numbers, or OpenOffice/LibreOffice file format.</div><div><br></div><div>The first sheet should be named "Assignment Summary" have your name and three columns:</div></div><div class="cell markdown-cell"><table>
+<thead>
+<tr>
+<th>Question Number</th>
+<th>Question text from the assignment</th>
+<th>(Analytical) Database Query answering the question</th>
+<th>Notes and Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>What is the average income in each employment category?</td>
+<td><code>SELECT employment_categories.category_description, average_income FROM ( SELECT employment_category, avg(income) AS average_income FROM person_economic_info GROUP BY employment_category ) cat_income JOIN employment_categories ON (cat_income.employment_category = employment_categories.employment_category) ORDER BY average_income DESC</code></td>
+<td>This was put into the example text</td>
+</tr>
+<tr>
+<td>1</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+</div><div class="cell text-cell"><div><div>With each question, you will write a query that answers the question. &nbsp;Put the question text and your query into the Assignment Summary, along with any comments required for that question. &nbsp;Then you will put the results of the query/report you create for each question into a new sheet.</div><div><br></div><div>Your spreadsheet's summary sheet should look something like this:<br></div></div><div><br></div><img src="resources/96B1210B1CD229BD1F9BC96A77B008E4.png" alt="Summary sheet.png" width="1051" height="584"><br></div><div class="cell text-cell"><div>To get the results into the spreadsheet, you will need to capture your output from DataGrip in table form. &nbsp;First, ensure you are capturing data in the right format. &nbsp;Right-click in an output table in DataGrip, and select the "Data Extractor" submenu, then "HTML Table."<br></div><div><br></div><div><img src="resources/E6E796928F7A55781D822B4E7A301D6A.png" alt="right-click to extract to HTML table.png" width="829" height="662"><br></div><div><br></div><div>After this, you take all your output and copy it. Click the results and Select All, then copy.</div><div><br></div><div><img src="resources/064FD29A5C44E5F40583C80D40BF1E1C.png" alt="copy data from query results.png" width="695" height="701"><br></div><div><br></div><div>Create a sheet in the spreadsheet file for this question, paste into cell A1 of that new sheet. &nbsp;Adjust columns as needed.</div><div><br></div><div><img src="resources/309D842386FBEB9502D619A1806EBCE6.png" alt="paste data into spreadsheet.png" width="388" height="546"><br></div><div><br></div></div><div class="cell text-cell"><h1>Assignment Questions</h1>You need to present the following reports from this data. &nbsp;</div><div class="cell text-cell"><h2>1. Create a view named annotated_person_info</h2><div>This view should give the names of states, employment categories, etc for use in later reports.</div></div><div class="cell text-cell"><h2>2. For each state, give the following summary information. &nbsp;</h2><div>Use the <b>annotated_person_info</b>&nbsp;view&nbsp;to include the name of the state from the States table. &nbsp;You will need a GROUP BY to aggregate information by state.</div><div><ul><li>number of people reported</li><li>number of 4k televisions</li><li>number of smartphones</li><li>highest and average incomes</li><li>percentage of respondents that are male</li></ul></div></div><div class="cell text-cell"><h2>3. For each each state <i>and gender</i>, give the same information.</h2></div><div class="cell text-cell"><h2>4. Show each state's rank for people responding, smartphones and average income</h2><div>You will be using analytical/window functions for this with ORDER BY.</div><div><br></div><div>Start with your query from question 2. &nbsp;Wrap it in a subquery. &nbsp;I'll quickly demo, but this syntax has intentional errors. &nbsp;You need to be sure you rewrite it yourself. &nbsp;So if your answer to question 2 is something like this:</div></div><div class="cell code-cell"><div class="ace-chrome"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">select</span> <span class="ace_identifier">state_name</span>, <span class="ace_identifier">total</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">tv4k</span><span class="ace_paren ace_rparen">)</span> <span class="ace_keyword">from</span> <span class="ace_identifier">personinfo</span> <span class="ace_identifier">collect</span> <span class="ace_identifier">state_name</span>
+</div></div></div></div><div class="cell text-cell">Put it in a subquery like this:</div><div class="cell code-cell"><div class="ace-chrome"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">select</span> <span class="ace_identifier">state_name</span>, <span class="ace_identifier">GET_RANK_STUFF</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">state4k</span><span class="ace_paren ace_rparen">)</span> 
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">from</span> <span class="ace_paren ace_lparen">(</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_keyword">select</span> <span class="ace_identifier">state_name</span>, <span class="ace_identifier">total</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">tv4k</span><span class="ace_paren ace_rparen">)</span> <span class="ace_keyword">as</span> <span class="ace_identifier">state_4k</span> <span class="ace_keyword">from</span> <span class="ace_identifier">personinfo</span> <span class="ace_identifier">collect</span> <span class="ace_identifier">state_name</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">)</span> <span class="ace_identifier">state_summary_info</span>
+</div></div></div></div><div class="cell text-cell"><h2>5. Rank each gender for people responding, smartphones and average income by state</h2><div>You will be using analytical/window functions for this with ORDER BY and PARTITION BY.</div><div><br></div><div>Start with your query from question 3, and wrap it in a subquery.</div><div><br></div><div>Each row should list the state and the gender. &nbsp;Then rank that state for smartphone ownership in that gender. For example, Utah might have the seventeenth highest number of smartphones owned by women in that state. &nbsp;So the windowing clause should not use state in the partitioning. &nbsp;We are separately ranking for each gender across all states.</div></div><div class="cell text-cell"></div><div class="cell text-cell"></div></div>
+      <script></script>
+    </body>
+    </html>
+  
