@@ -1,0 +1,61 @@
+numeric_id	US_State_Terr	Abbreviation	Is_State
+0	Not Reported	ZZ	Territory
+     1	Alabama	AL	State
+     2	Alaska	AK	State
+     3	Arizona	AZ	State
+     4	Arkansas	AR	State
+     5	California	CA	State
+     6	Colorado	CO	State
+     7	Connecticut	CT	State
+     8	Delaware	DE	State
+     9	Florida	FL	State
+    10	Georgia	GA	State
+    11	Hawaii	HI	State
+    12	Idaho	ID	State
+    13	Illinois	IL	State
+    14	Indiana	IN	State
+    15	Iowa	IA	State
+    16	Kansas	KS	State
+    17	Kentucky	KY	State
+    18	Louisiana	LA	State
+    19	Maine	ME	State
+    20	Maryland	MD	State
+    21	Massachusetts	MA	State
+    22	Michigan	MI	State
+    23	Minnesota	MN	State
+    24	Mississippi	MS	State
+    25	Missouri	MO	State
+    26	Montana	MT	State
+    27	Nebraska	NE	State
+    28	Nevada	NV	State
+    29	New Hampshire	NH	State
+    30	New Jersey	NJ	State
+    31	New Mexico	NM	State
+    32	New York	NY	State
+    33	North Carolina	NC	State
+    34	North Dakota	ND	State
+    35	Ohio	OH	State
+    36	Oklahoma	OK	State
+    37	Oregon	OR	State
+    38	Pennsylvania	PA	State
+    39	Rhode Island	RI	State
+    40	South Carolina	SC	State
+    41	South Dakota	SD	State
+    42	Tennessee	TN	State
+    43	Texas	TX	State
+    44	Utah	UT	State
+    45	Vermont	VT	State
+    46	Virginia	VA	State
+    47	Washington	WA	State
+    48	West Virginia	WV	State
+    49	Wisconsin	WI	State
+    50	Wyoming	WY	State
+    51	American Samoa	AS	Territory
+    52	District of Columbia	DC	Territory
+    53	Federated States of Micronesia	FM	Territory
+    54	Guam	GU	Territory
+    55	Marshall Islands	MH	Territory
+    56	Northern Mariana Islands	MP	Territory
+    57	Palau	PW	Territory
+    58	Puerto Rico	PR	Territory
+    59	Virgin Islands	VI	Territory
