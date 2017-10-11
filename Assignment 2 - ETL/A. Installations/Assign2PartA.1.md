@@ -7,7 +7,12 @@ We will go through the _Python for Data Analysis_, 2nd Ed instructions from page
 * IPython
 * Jupyter
 * PyCharm
+* GitHub Desktop
  
+##*PLEASE TAKE SCREEN SHOTS OF EACH STEP AND SAVE THEM IN THIS DIRECTORY OR A SUBDIRECTORY*
+
+You will be handing these in via GitHub.  More later.
+
 ## Install Git version control
 
 Git is a version-control system that we will use to share files, in addition to our use of the Google Drive.
@@ -16,9 +21,7 @@ You can download git from [https://git-scm.com/download/](https://git-scm.com/do
 
 You will have received an invitation from me to use our GitHub repository.  You need to accept that invitation and create an account.
 
-We will be using GitHub as our repository, and I am suggesting that if you are new to Git, you download the GitHub Desktop for your computer from [https://desktop.github.com](https://desktop.github.com).
-
-Once you start it, 
+We will be using GitHub as our repository.
 
 ## Install Anaconda Python
 
@@ -45,6 +48,13 @@ When you install Anaconda on Windows, it suggests you _not_ set the Windows PATH
 
 ![Anaconda Windows Program Group](pix/windows anaconda prompt.png)
 
-## Anaconda Navigator - Just say no!
+## *Anaconda Navigator - Just say no!*
 
 The Anaconda package includes a boatload of features, including a monster called "Anaconda Navigator."  This goes way beyond anything we need or want. _Don't_ launch it.
+
+##GitHub Desktop
+
+GitHub has its own graphical client called GitHub Desktop. Especially if you are new to Git, you download the GitHub Desktop for your computer from [https://desktop.github.com](https://desktop.github.com).
+
+
+##*You may now proceed to part A.2*
