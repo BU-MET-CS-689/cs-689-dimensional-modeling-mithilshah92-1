@@ -1,8 +1,6 @@
 # Getting Started with Git
 As mentioned before, you will be submitting your assignments through the Git version control system using a server called 'GitHub Classroom.'
 
-A majority of assignment materials are on GitHub with initial code and such.
-
 ## Accepting your GitHub Classroom Invite
 
 I have (tried?) to send invitations to all of you with our GitHub classroom.  These will all end up getting you to a URL like [https://classroom.github.com/classrooms/32312826-bu-met-cs-689](https://classroom.github.com/classrooms/32312826-bu-met-cs-689].  However, the actual invitation URL from GitHub is [https://classroom.github.com/a/qzz1XX6M](https://classroom.github.com/a/qzz1XX6M)
@@ -51,11 +49,7 @@ You will now be told to authorize your account...  If you don't, this will be a 
 
 ## Going to your repository involves a copy
 
-<img src="pix/p09.02 Preparing your Repository.png" height=210 width=320 />
-
-## Finally, your copy of the class repository!!
-
-<img src="pix/p09.53 User's copied repository.png" height=350 width=400 />
+<img src="pix/.png" height=250 width=250 />
 
 ## Get Files from GitHub
 
