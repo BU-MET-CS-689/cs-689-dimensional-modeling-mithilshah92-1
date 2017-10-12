@@ -9,7 +9,7 @@ We will go through the _Python for Data Analysis_, 2nd Ed instructions from page
 * PyCharm
 * GitHub Desktop
  
-##*PLEASE TAKE SCREEN SHOTS OF EACH STEP AND SAVE THEM IN THIS DIRECTORY OR A SUBDIRECTORY*
+##*PLEASE TAKE SCREEN SHOTS OF EACH STEP AND SAVE THEM IN THE "Put your screen shots here!" SUBDIRECTORY*
 
 You will be handing these in via GitHub.  More later.
 
@@ -44,7 +44,7 @@ Here's how it is on Windows:
 
 ## Note on Anaconda on Windows - Anaconda Prompt
 
-When you install Anaconda on Windows, it suggests you _not_ set the Windows PATH for anaconda python.  I think that this is probably good advice, but in this case it makes it harder to run the Anaconda binaries and Jupyter. There is a way to ease this, and it's very Windows-y.  While programmers might expect to pop up a command-line prompt, don't use just any command line.  Go to the Anaconda program group and run Anaconda Prompt instead.
+When you install Anaconda on Windows, it suggests you _not_ set the Windows PATH for anaconda python.  I think that this is probably good advice, but in this case it makes it harder to run the Anaconda binaries and Jupyter. There is a way to ease this, and it's very Windows-y.  While programmers might expect to pop up a command-line prompt, don't use just any command line.  Go to the Anaconda program group and run Anaconda Prompt instead.  *(Suggestion: pin to Taskbar)*
 
 ![Anaconda Windows Program Group](pix/windows anaconda prompt.png)
 
@@ -57,4 +57,4 @@ The Anaconda package includes a boatload of features, including a monster called
 GitHub has its own graphical client called GitHub Desktop. Especially if you are new to Git, you download the GitHub Desktop for your computer from [https://desktop.github.com](https://desktop.github.com).
 
 
-##*You may now proceed to part A.2*
+#*You may now proceed to part A.2*
