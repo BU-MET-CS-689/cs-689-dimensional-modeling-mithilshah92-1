@@ -103,4 +103,4 @@ You can use the "Git GUI Here" if you like - all the Git tools work the same.  H
 
 *Do not use the "Git Bash Here" operation.*  This present a Linux-like command window ("bash") rather than the Windows command prompt, which might be totally foreign to a Windows users.  Worse, however, *it does not have the setup you need to use Python*.
 
-#*You may now proceed to part A.3*
+## *You may now proceed to <a href="Assign2PartA.3.md"> part A.3 </a>*

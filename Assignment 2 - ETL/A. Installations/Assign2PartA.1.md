@@ -57,4 +57,4 @@ The Anaconda package includes a boatload of features, including a monster called
 GitHub has its own graphical client called GitHub Desktop. Especially if you are new to Git, you download the GitHub Desktop for your computer from [https://desktop.github.com](https://desktop.github.com).
 
 
-#*You may now proceed to part A.2*
+## *You may now proceed to <a href="Assign2PartA.2.md"> part A.2</a>*
