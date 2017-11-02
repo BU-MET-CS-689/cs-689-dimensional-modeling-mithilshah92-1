@@ -7,7 +7,7 @@ If you have a "MarkDown" viewer on your computer, you can read these files there
 
 <img src="pix/Your GitHub home looks like this.png" width="200" height="120" /> 
 
-Then click on "Assignment 2 - ETL.png"
+Then click on "Assignment 2 - ETL"
 
 <img src="pix/Click on Assignment 2 - ETL.png" />
 
