@@ -7,3 +7,4 @@ msg = 'Welcome, CS 689 Students!'
 print ("Got a message for you: " + msg)
 
 # In your editor, send a message or two to your instructor here
+print ("I got to do better!")
