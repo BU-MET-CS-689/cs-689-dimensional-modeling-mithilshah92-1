@@ -8,13 +8,15 @@ Write up a report for this lab in a Microsoft Word or other word-processing docu
 
 You will also write new SQL commands and save these into your "Assignment 3 - Dimensional Data Modeling" directory, then commit and push to GitHub.
 
-## Download new PG-Bitnami-AdvWorks appliance
+## Download new PG-Bitnami for 'CS 689 ETL Lab' appliance
 
-On the class Google Drive, look in the "Virtual Machine Appliances Here" folder.  You will find a third version of the PostgreSQL database, named `PG-Bitnami-AdvWorks.ova`.  Download this appliance and import it into VirtualBox.
+On the class Google Drive, look in the "Virtual Machine Appliances Here" folder.  You will find a third version of the PostgreSQL database, named `PG-Bitnami for CS 689 ETL Lab.ova`.  Download this appliance and import it into VirtualBox.
 
 ### Connect using DataGrip
 
-Please make sure that this appliance is the only one running.  All of the connection information is the same.
+Please make sure that this appliance is the only one running.
+
+You connect the same as the other appliance, except this is accessible via port 56321, rather than the other port.
 
 When you connect, you may see the database called "AdventureWorks" immediately.  However, you are more likely to see your existing database and schemas like this:
 
@@ -64,7 +66,9 @@ You should now have a mini data warehouse in the **hr_datawarehouse** schema.
 
 ## What is "ELAPSED\_DAYS_DIMENSION"?
 
-This is a type of dimension that I 
+This is a type of dimension that is based on date-time, but not on the calendar - it's based on date-time *intervals*, not absolute dates.  To make calculations for each employee based on how long since employment, we certainly can't use an absolute date...
+
+Explain this dimension in your report.
 
 ## How did we build the pay\_change_facts table?
 
