@@ -8,9 +8,9 @@ Write up a report for this lab in a Microsoft Word or other word-processing docu
 
 You will also write new SQL commands and save these into your "Assignment 3 - Dimensional Data Modeling" directory, then commit and push to GitHub.
 
-## Download new PG-Bitnami for 'CS 689 ETL Lab' appliance
+## Download new PG-Bitnami for 'PG-Bitnami for CS 689 Dimensional Modeling Lab' appliance
 
-On the class Google Drive, look in the "Virtual Machine Appliances Here" folder.  You will find a third version of the PostgreSQL database, named `PG-Bitnami for CS 689 ETL Lab.ova`.  Download this appliance and import it into VirtualBox.
+On the class Google Drive, look in the "Virtual Machine Appliances Here" folder.  You will find a third version of the PostgreSQL database, named `PG-Bitnami for CS 689 Dimensional Modeling Lab.ova`.  Download this appliance and import it into VirtualBox.
 
 ### Connect using DataGrip
 
